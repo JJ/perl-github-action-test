@@ -1,0 +1,12 @@
+name: 'Hello Perl'
+description: 'Greet someone with Perl'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - run: use v5.14; say "Hi ${{ inputs.who-to-greet}‼
+      shell: perl

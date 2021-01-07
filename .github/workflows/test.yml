@@ -6,6 +6,6 @@ jobs:
     name: Testing
     steps:
     - id: foo
-      uses: JJ/perl-github-action-test@master
+      uses: JJ/perl-github-action-test@HEAD
       with:
         who-to-greet: 'Þor'

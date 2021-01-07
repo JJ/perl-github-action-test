@@ -8,5 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - run: print %ENV;
+      shell: perl {0}
     - run: use v5.14; say "Hi ${{ inputs.who-to-greet}}‼"
       shell: perl {0}

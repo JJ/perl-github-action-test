@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: use v5.14; say "Hi ${{ inputs.who-to-greet}}‼
-      shell: perl
+    - run: use v5.14; say "Hi ${{ inputs.who-to-greet}}‼"
+      shell: perl {0}
